@@ -199,7 +199,7 @@
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Draw snake
-      ctx.fillStyle = '#4ecca3';
+      ctx.fillStyle = '#ff69b4';
       snake.forEach((segment, index) => {
         const x = segment.x * gridSize;
         const y = segment.y * gridSize;
@@ -207,9 +207,9 @@
 
         // Head highlight
         if (index === 0) {
-          ctx.fillStyle = '#5fe3b0';
+          ctx.fillStyle = '#ffb3d9';
           ctx.fillRect(x + 3, y + 3, gridSize - 6, gridSize - 6);
-          ctx.fillStyle = '#4ecca3';
+          ctx.fillStyle = '#ff69b4';
         }
       });
 
